@@ -8,11 +8,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Chase Southard"]
   s.email       = ["chase.southard@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/chaserx/graceful-rounding"
   s.summary     = %q{Rounds Time object back based on a +/- 7 minute grace period}
   s.description = %q{TODO: Write a gem description}
 
   s.rubyforge_project = "graceful_rounding"
+  
+  s.add_development_dependency "chronic"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
