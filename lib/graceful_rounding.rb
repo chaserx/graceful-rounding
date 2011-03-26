@@ -1,6 +1,10 @@
 module GracefulRounding
-
+    
+    
+    # takes a Time object and rounds the minutes within a grace period (+/- 7 min of the quarter hour)
     def graceful_rounding
+      raise ArgumentError, 'Argument is not Time' unless self.is_a? Time 
+      
       @time = self
       mins = @time.min
 
