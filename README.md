@@ -4,6 +4,9 @@ A simple gem to round to the nearest 15 minutes inside a grace period.
 
 Adds a method to Time class. Rounds Time object using (@time.min) minutes within a grace period (+/- 7 min of the quarter hour)
 
+Tested under:
+
+* Ruby 1.9.2p136 tested
 
 ## Example usage
 
